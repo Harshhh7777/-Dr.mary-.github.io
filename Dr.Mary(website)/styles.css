@@ -1,0 +1,419 @@
+/* Import Google Fonts */
+/* Set initial position and styles of the top-bar */
+
+@media screen and (max-width: 768px) {
+  /* CSS rules for screens up to 768px wide */
+}
+
+@media screen and (max-width: 480px) {
+  /* CSS rules for screens up to 480px wide */
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.column {
+  width: 50%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+.dark-mode .blog-container .blog h4 {
+  color: #5014c7;
+}
+
+
+.slideshow-background.dark-mode {
+  z-index: -2;
+}
+
+
+#movable-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #acc3d7;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+  transition: top 0.3s ease;
+}
+
+.custom-heading {
+  font-family: 'Caveat', cursive; /* Use the font-family name from Google Fonts */
+  font-size: 70px;
+  font-weight: bold;
+  color: #011001;
+
+
+}
+
+.sub-heading {
+  font-family: 'Caveat', cursive; /* Use the font-family name from Google Fonts */
+  font-size: 45px;
+  color: #061603;
+}
+
+
+.top-bar {
+    background-color: whitesmoke;
+    text-align: center;
+  
+    position: fixed;
+    justify-content: space-between; /* Horizontally center the contents */
+    align-items: center; /* Vertically center the contents */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    padding: 10px;
+    z-index: 999; /* Increase the z-index value for the top bar */
+    /* transition: background-color 0.3s ease; */
+    }
+    
+    
+
+    .top-bar h1 {
+        color: #020211; /* Red color */
+        text-decoration:underline;
+        font-family: 'Caveat', cursive;
+font-family: 'Edu SA Beginner', cursive;
+font-family: 'Lumanosimo', cursive;
+font-family: 'REM', sans-serif;
+        font-style: normal;
+        font-size: 40px;
+        flex: 1; /* Allow the h1 to take the remaining space and center it */
+        text-align: center; /* Center the h1 text */
+        height: 7%;
+        margin-top: -1%;
+        margin-bottom: 20px;
+       }
+      .top-bar h2{
+        color: rgb(1, 7, 12);
+        font-size: 30px;
+        margin-top: 3px; /* Adjust the value as needed to increase or decrease the space */
+        margin-bottom: -20px; /* Adjust the value as needed */
+        flex: 1;
+        text-align: center; /* Center the h1 text */
+        }
+    
+        .top-bar a {
+          color: #180556fc;
+          text-decoration: underline;
+          
+        }
+        .nav-links {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 90px; /* Add some spacing between navigation links */
+            transition: color 0.3s ease;
+            padding: 8px 16px;  
+                         
+          }
+          
+        .top-bar nav {
+            font-size: 25px;
+            padding-top: 45px ; /* Adjust the value as needed */
+          }
+
+     
+         .nav-links:hover {
+            color: #04650e;
+        }
+
+        .main-content {
+            padding: 80px 20px; /* To create space below the fixed top bar */
+          }
+body {
+    margin: 0 ;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #e2e9e2;
+    padding-top: 0%;
+          }
+.description {
+            font-size: 30px;
+            color: #031101;
+            text-align: center;
+            margin-top: 0;
+            position: absolute;
+            top: 65%; /* Adjust the vertical position as needed */
+            left: 25%; /* Position the element on the right side */
+            transform: translateY(-50%); /* Center the element vertically */
+            line-height: 1.5; /* Adjust the line-height value to add space between lines */
+          }
+
+.logo-container{
+    width: 200px; /* Adjust the size of the logo as needed */
+    height: 200px; /* Adjust the size of the logo as needed */
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 100px rgba(14, 224, 14, 0.3); /* Add a subtle shadow effect */
+    top: 50px; /* Position the logo at the top of the content */
+    left: 15%;
+    perspective: 1000px; /* Set the perspective for the 3D effect */
+
+    z-index: 1;
+    animation: pulsateLogo 7s infinite;
+    }
+
+    .circular-logo {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Maintain the aspect ratio and cover the entire circular area */
+    }
+    .logo-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .vibrate {
+        animation: vibrateAnimation 0.2s linear infinite; /* Adjust the duration and animation effect */
+      }
+    @keyframes pulsateLogo {
+    0%, 100% {
+      transform: translateX(-50%) scale(1); /* Initial and final size */
+      opacity: 1; /* Full opacity */
+    }
+    50% {
+      transform: translateX(-50%) scale(1.2); /* Slightly larger size */
+      opacity: 100; /* Slightly lower opacity */
+    }
+    }
+
+    /* Style the logo image */
+.circular-logo {
+  width: 100%;
+  height: 100%;
+  transition: transform 7s; /* Add a smooth transition for the flip effect */
+}
+
+/* Apply the flip effect on hover */
+.logo-container:hover .logo {
+  transform: rotateY(180deg); /* Rotate the logo along the Y-axis by 180 degrees */
+}
+/* Styles for the blog container */
+.blog-container {
+  position: relative;
+  z-index: 1; /* Set a z-index value for the blog container */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+    /* Styles for individual blogs */
+.blog {
+  width: 300px; /* Adjust the width as needed for your design */
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer; /* Add a pointer cursor to indicate the blog is clickable */
+  margin-bottom: 20px; /* Add space at the bottom of each blog entry */
+
+  /* Add any other styling you want for each blog */
+}
+
+
+/* Add some styling for the page content */
+.content {
+    position: relative;
+    /* display: flex; */
+    /* flex-direction: column; */
+    padding-top: 190px; /* Add padding to create space for the fixed logo */
+    padding-bottom: 120px; /* Height of the footer + some additional padding */
+    text-align: center; /* Center all items within the content */
+    justify-content: center; /* Vertically center all items within the content */
+    align-items: center; /* Horizontally center all items within the content */
+    /* margin: 0 auto; */
+    }
+    .content h2 {
+        margin-top: 80px; /* Add vertical space between the logo and the h2 heading */
+      font-size: 36px;
+      color: #0bdd15;
+    }
+    .content p {
+        font-size: 28px;
+        color: #020602;
+        line-height: 1.6;
+      }
+    .content h3 {
+        font-size: 28px;
+        color: #070707;
+        margin-bottom: 10px;
+      }
+    .content ul {
+        list-style-type: none;
+        padding: 0;
+      }
+    .content li {
+        font-size: 18px;
+        color: #0d0c0c;
+        margin-bottom: 10px;
+        padding-left: 20px;
+        position: relative;
+      }
+    
+/* Styling for the footer */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #acc3d7;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 2; /* Increase the z-index value for the footer to position it above other elements */
+    }
+    .footer p {
+        margin: 0;
+        font-size: 14px;
+    }
+    .footer a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 14px;
+    }
+    .footer a:hover {
+        text-decoration: underline;
+    }
+
+    .contact-number {
+      font-size: 18px;
+    }
+
+/* Adjust font size for smaller screens (e.g., mobile phones) */
+@media screen and (max-width: 768px) {
+  .contact-number {
+    font-size: 16px;
+  }
+}
+
+/* Further adjust font size for even smaller screens (e.g., smaller mobile phones) */
+@media screen and (max-width: 480px) {
+  .contact-number {
+    font-size: 14px;
+  }
+}
+    
+/* Media query for responsive navigation */
+@media screen and (max-width: 768px) {
+.top-bar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+.top-bar .nav-links {
+      display: block;
+      margin: 10px 0;
+    }
+.blog {
+      width: 100%; /* Full width on smaller screens */
+    }
+  }
+/* Styles for blog content */
+.blog-content {
+  display: none; /* Initially hide the blog content */
+}
+
+/* Styles for showing the active blog content */
+.blog-content.active {
+  display: block;
+} 
+
+    
+    /* @keyframes vibrateAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-2px) rotateZ(-1deg);
+  }
+  50% {
+    transform: translateX(2px) rotateZ(1deg);
+  }
+  75% {
+    transform: translateX(-2px) rotateZ(-1deg);
+  }
+  100% {
+    transform: translateX(0);
+  }
+} */
+
+/* .element {
+    animation: vibrateAnimation 1s infinite;
+  } */
+
+  .slideshow-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slideshow-background img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 3s ease-in-out; /* Adjust the transition timing as needed */
+}
+
+/* Add this to your existing CSS */
+.dark-mode {
+  background-color: #29bd1b;
+  color: #fff;
+}
+
+/* Toggle button styles */
+.mode-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+/* Add these styles to your existing CSS */
+
+
+
+.dark-mode .content {
+  color: #8568e3;
+  background-color: #46bd0fc6;
+}
+
+/* Update other styles as needed for dark mode */
+@media (prefers-color-scheme: dark) {
+  .dark-mode .top-bar {
+    background-color: #1b1b1b;
+  }
+  .dark-mode .nav-links {
+    color: #ccc;
+  }
+  .dark-mode .content {
+    color: #ddd;
+    background-color: #2a2a2a;
+  }
+  /* Add other styles as needed for dark mode */
+}
